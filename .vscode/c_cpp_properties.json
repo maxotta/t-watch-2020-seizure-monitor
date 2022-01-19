@@ -8,9 +8,9 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/max/src/Incubator/t-watch-2020-seizure-monitor/include",
-                "/home/max/src/Incubator/t-watch-2020-seizure-monitor/src",
-                "/home/max/src/Incubator/t-watch-2020-seizure-monitor/.pio/libdeps/ttgo-t-watch/TTGO TWatch Library/src",
+                "/home/max/src/github/t-watch-2020-seizure-monitor/include",
+                "/home/max/src/github/t-watch-2020-seizure-monitor/src",
+                "/home/max/src/github/t-watch-2020-seizure-monitor/.pio/libdeps/ttgo-t-watch/TTGO TWatch Library/src",
                 "/home/max/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                 "/home/max/.platformio/packages/framework-arduinoespressif32/libraries/SPIFFS/src",
                 "/home/max/.platformio/packages/framework-arduinoespressif32/libraries/FS/src",
@@ -107,9 +107,9 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/max/src/Incubator/t-watch-2020-seizure-monitor/include",
-                    "/home/max/src/Incubator/t-watch-2020-seizure-monitor/src",
-                    "/home/max/src/Incubator/t-watch-2020-seizure-monitor/.pio/libdeps/ttgo-t-watch/TTGO TWatch Library/src",
+                    "/home/max/src/github/t-watch-2020-seizure-monitor/include",
+                    "/home/max/src/github/t-watch-2020-seizure-monitor/src",
+                    "/home/max/src/github/t-watch-2020-seizure-monitor/.pio/libdeps/ttgo-t-watch/TTGO TWatch Library/src",
                     "/home/max/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                     "/home/max/.platformio/packages/framework-arduinoespressif32/libraries/SPIFFS/src",
                     "/home/max/.platformio/packages/framework-arduinoespressif32/libraries/FS/src",
