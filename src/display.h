@@ -2,15 +2,14 @@
 
 #include "power_status.h"
 #include "clock.h"
+#include "accelerometer.h"
 #include "serial_message_queue.h"
-
-#define DISPLAY_POWER 0x1
-#define DISPLAY_WATCH 0x2
 
 class Display {
   public:
     PowerStatus * power;
     Clock * clock;
+    Accelerometer * accel;
     TTGOClass * system;
 
     void run() {
@@ -20,6 +19,10 @@ class Display {
 
       if (update_key & clock->displayIdentifier()) {
         clock->display();
+      }
+
+      if (update_key & accel->displayIdentifier()) {
+        accel->display();
       }
 
     }

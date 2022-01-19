@@ -1,6 +1,8 @@
 #pragma once
 #include "actor.h"
 
+#define DISPLAY_POWER_STATUS_ID 1
+
 class PowerStatus : public Actor {
   public:
     bool ready();
@@ -8,7 +10,7 @@ class PowerStatus : public Actor {
 
     void display();
     const uint32_t displayIdentifier() {
-      return 0x1;
+      return DISPLAY_POWER_STATUS_ID;
     }
 
   private:

@@ -1,6 +1,8 @@
 #pragma once
 #include "actor.h"
 
+#define DISPLAY_CLOCK_ID 2
+
 class DigitMetric {
   public:
     DigitMetric(int16_t _font) : font(_font), space(0), x(0), y(0) {};
@@ -21,7 +23,7 @@ class Clock : public Actor {
     void display();
 
     const uint32_t displayIdentifier() {
-      return 0x4;
+      return DISPLAY_CLOCK_ID;
     }
 
   private:

@@ -11,6 +11,7 @@ TTGOClass *watch;
 
 Clock display_clock;
 PowerStatus display_power;
+Accelerometer display_acceleration;
 PowerManager power_manager;
 Display display;
 TaskHandle_t display_task;
@@ -38,7 +39,7 @@ void setup(void) {
 
   display.power = (PowerStatus*) &display_power;
   display.clock = (Clock*) &display_clock;
-
+  display.accel = (Accelerometer*) &display_acceleration;
   display.system = watch;
 
   runDisplayTask((Display *) &display, &display_task);
@@ -50,6 +51,7 @@ void setup(void) {
 
   runActor("watchface", &display_clock, 20);
   runActor("power", &display_power, 11);
+  runActor("accel", &display_acceleration, 11);
 
 }
 
